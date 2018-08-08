@@ -2,9 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <title>bibek</title>
-    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="index.js"></script>
@@ -12,8 +13,16 @@
   </head>
 
     <!-- navigation -->
+<div class="hamburger">
+<a href=#>
+  <span></span>
+  <span></span>
+  <span></span>
+</a>
+</div>
 
 <body id="top">
+  <a href="#" class="hamburger"></a>
 	<div class="full-wrapper">
 		<header id="home">
 			<div class="col-container">
@@ -21,7 +30,8 @@
 					<h2 class="title">Bibek Thapa</h2>
 					<ul class="main-nav">
 						<li><a href="#home">HOME</a></li>
-						<li><a href="#portfolio">PORTFOLIO</a></li>
+						<li><a href="#projects">PROJECTS</a></li>
+						<li><a href="#skills">SKILLS</a></li>
             <li><a href="#photography">PHOTOGRAPHY</a></li>
 						<li><a href="#contact">CONTACT</a></li>
 					</ul>
@@ -30,8 +40,8 @@
 					<div class="profile-picture">
 						<img src="https://avatars0.githubusercontent.com/u/38892317?s=460&v=4" alt="profile-pic" class="profile-pic">
 					</div>
-					<div class="about-me">
-						<p>Hi! I'm a full-stack developer who loves programming and responsive design. I recently finished bootcamp in web development at Bitmaker and am excited to be working and learning!</p>
+					<div class="about-me" >
+						<p id="iam"></p>
 					</div>
 				</div>
 			</div>
@@ -40,9 +50,12 @@
      <!--main part of the website -->
 
 		<main>
+
+    <!--Projects-->
+
 			<div class="col-container">
 				<div class="wrapper">
-  					<h3 class="tag-line" id="portfolio">PORTFOLIO</h3>
+  					<h3 class="tag-line" id="projects">PROJECTS</h3>
 					<div class="container">
 						<div class="project-1 project">
 							<div class="project-layout">
@@ -95,11 +108,35 @@
 				</div>
 			</div>
 
+      <!--Skills -->
+
+     <h3 class="tag-line" id="skills">SKILLS</h3>
+       <h4>Languages</h4>
+
+       <div class="tools">
+         <img src="html.svg" alt="">
+         <img src="css3.svg" alt="">
+         <img src="js.png" alt="">
+         <img src="ruby.png" alt="">
+         <img src="psq.png" alt="">
+       </div>
+
+       <h4>Frameworks</h4>
+
+       <div class='tools'>
+         <img src="rails.png" alt="">
+         <img src="jquery.png" alt="">
+         <img src="laravel.png" alt="">
+       </div>
+
+     </div>
+
+
 
  <!--Photography -->
+
  <h3 class="tag-line" id="photography">PHOTOGRAPHY</h3>
  <div class="gallery">
-
    <div class="gallery-item">
      <img src="https://picsum.photos/400/200/?random" class="gallery-image" alt="">
    </div>
@@ -125,9 +162,10 @@
      <img src="https://picsum.photos/400/207/?random" class="gallery-image" alt="">
    </div>
  </div>
-
+  <!--Photography -->
 </main>
- <!--Photography -->
+
+
 
 
 
@@ -141,20 +179,28 @@
 					<p>Phone: <b>416-662-5980</b></p>
 					<p>Email: <a href="bst_bib@hotmail.com"><b>bst_bib@hotmail.com</b></a></p>
 				</div>
+        <div class="social">
+          <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+          <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+          <li><i class="fa fa-github" aria-hidden="true"></i></li>
+          <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+          <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+        </div>
 				<hr/>
 				<div class="footer-content">
 					<ul>
 						<li class="my-name"><b>Bibek Thapa</b></li>
 						<li><a href="#top" class="back-btn">BACK TO TOP</a></li>
 						<li><a href="#home">HOME</a></li>
-						<li><a href="#portfolio">PORTFOLIO</a></li>
+						<li><a href="#projects">PROJECTS</a></li>
 						<li><a href="#photography">PHOTOGRAPHY</a></li>
 						<li><a href="#contact">CONTACT</a></li>
 					</ul>
 				</div>
 			</div>
 		</footer>
-	</div>
+
+
 </body>
 </html>
 
