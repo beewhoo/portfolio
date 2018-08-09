@@ -273,9 +273,7 @@ hr{
     letter-spacing: 5px;
     color: inherit;
     transition: all 0.2s ease 0s;
-}
-
-
+  }
 
 
 
@@ -360,6 +358,10 @@ hr{
 
   .social li {
     font-size: 2.5em;
+  }
+
+  .project .project-layout .pf-image{
+    max-width: 70%;
   }
 }
 
