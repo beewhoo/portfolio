@@ -11,6 +11,8 @@ body{
 
 }
 
+@media(min-width: 1px){
+
 
 /*-------- Hamburger-------*/
 .hamburger {
@@ -241,6 +243,7 @@ hr{
 	}
 }
 
+}
 
 
 
