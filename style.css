@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
@@ -8,11 +8,7 @@ body{
 	margin:0;
 	padding:0;
 	text-align: center;
-
 }
-
-@media(min-width: 1px){
-
 
 /*-------- Hamburger-------*/
 .hamburger {
@@ -207,7 +203,6 @@ hr{
   color:white;
 }
 
-
 /*-----PHOTOGRAPHY-----*/
 
 .gallery-item {
@@ -243,12 +238,11 @@ hr{
 	}
 }
 
-}
+
 
 
 
 /*-----Responsive-768px-------------------------------------------------------------------------------*/
-
 
 
 
@@ -360,6 +354,7 @@ hr{
     grid-template-columns: 1fr 1fr;
 
   }
+
 }
 
 
@@ -408,19 +403,19 @@ hr{
 
 
 
-.content .content-overlay {
-  background: rgba(0,0,0,0.7);
-  position: absolute;
-  height: 99%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
+  .content .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
   }
 
   .content:hover .content-overlay{
@@ -481,7 +476,6 @@ hr{
     grid-template-columns: 1fr 1fr 1fr;
 
   }
-
 
 
 }
