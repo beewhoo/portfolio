@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
    console.log("DOM fully loaded and parsed");
 
 var heading = document.querySelector("#iam");
-                var data = ["Hi! I'm Bibek 😜","I am a web developer!💻","I ❤️ solving problems!", "Traveling ✈️ is a drug of my choice!"];
+                var data = ["Hi! I'm Bibek 😜","I am a web developer!💻","I ❤️ solving problems!", "I've got crush😍 on the world!✈️"];
                 var j = 0;
                 var i = 0;
 

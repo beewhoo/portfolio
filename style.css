@@ -71,7 +71,7 @@ span:nth-child(2) {
 }
 
 .banner, footer {
-  background-image: url("mountain.jpg");
+  background-image: url("images/mountain.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -115,7 +115,12 @@ main{
 
 .about p {
     margin: 0 0 1em 0;
+
   }
+
+.about-me p {
+background-color: rgba(255,255,255, 0.4);
+}
 
 
 .tag-line{
@@ -137,13 +142,15 @@ main{
 	line-height: 1.5;
 }
 
-
-.tools img {
-  width:75px;
-  height:auto;
-  padding: 1em;
+div .tools {
+font-size: 5em;
 }
 
+/*-----projects----*/
+.content-image {
+  max-width: 100%;
+
+}
 
 /*----------Footer-----------*/
 .social li {
@@ -260,7 +267,7 @@ hr{
 	.main-nav li{
 		display: inline-block;
 		padding: 0;
-		margin: .5em 2em;
+		margin: .5em 1em;
 		box-shadow: 0 0 0 #FAFAFA;
 
 	}
@@ -278,8 +285,10 @@ hr{
 
 
 	.banner{
-    height: 768px;
+    height: 740px;
 		display: flex;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
 		justify-content: space-between;
 
 	}
@@ -295,21 +304,20 @@ hr{
   }
 
   .banner .about-me {
-    padding-top: 22em;
+    position: relative;
+    top: 13em;
   }
 
   .about {
-    margin: 20em;
+    margin: 13em;
   }
   .skills {
-    margin:10em;
+    margin:2.5em;
   }
 
-  .tools img {
-    width: 120px;
-    margin: 2em;
+  div .tools {
+  font-size: 10em;
   }
-
 
 	.about-me p{
 		line-height: 1.6;
@@ -317,16 +325,6 @@ hr{
 		color: white;
 	}
 
-	.wrapper .container{
-		display: flex;
-		flex-wrap: wrap;
-    padding-left: 2em;
-	}
-
-	.wrapper .container .project{
-		flex-basis:49%;
-		padding: 0;
-	}
 
 	.project{
 		margin-bottom: 1em;
@@ -360,8 +358,15 @@ hr{
     font-size: 2.5em;
   }
 
-  .project .project-layout .pf-image{
-    max-width: 70%;
+
+  .content {
+  position: relative;
+  width: 90%;
+  max-width: 380px;
+  margin: auto;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 1em;
   }
 }
 
@@ -372,12 +377,31 @@ hr{
 
 @media(min-width: 1024px){
 
+  .banner {
+    height: 980px;
+    width: auto;
+  }
+
+  .about {
+    margin:22em;
+  }
+
+  .skills{
+    margin:13.5em;
+
+  }
+
+  footer .contact-section{
+    padding:4em;
+
+  }
+
 	nav{
 		display: flex;
 		justify-content: space-between;
 	}
 
-	.col-container .main-nav{
+	.main-nav{
 		padding-top: 1em;
     margin:0em;
 	}
@@ -387,15 +411,79 @@ hr{
 		margin: 0 0 0 2em;
 	}
 
-	.wrapper .container .project{
-		flex-basis: 32%;
-	}
 
-	.wrapper .container .project:nth-child(3n+1){
-		padding-right: .5em;
-	}
 
-	.wrapper .container .project:nth-child(3n+3){
-		padding-left: .5em;
-	}
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all .7s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 1em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.container{
+  margin-top: 9.5em;
+  margin-bottom: 9.5em;
+
+}
+
+
+
+
 }
