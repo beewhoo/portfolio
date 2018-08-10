@@ -16,6 +16,7 @@ body{
 .hamburger {
 padding-bottom: 4em;
 }
+
 .hamburger a {
   position: absolute;
   top: 30px;
@@ -28,6 +29,7 @@ padding-bottom: 4em;
   border: 2px solid grey;
   tap-highlight-color: transparent;
 }
+
 span {
   display: block;
   width: 28px;
@@ -36,6 +38,7 @@ span {
   transition: .7s;
   pointer-events: none;
 }
+
 span:nth-child(2) {
   margin: 3px 0;
 }
@@ -224,6 +227,7 @@ hr{
 .gallery {
   padding-bottom: 1em;
 }
+
 @supports (display: grid) {
 	.gallery {
 		display: grid;
@@ -471,7 +475,7 @@ hr{
 
   }
   .gallery {
-    grid-template-columns: 1fr 1fr 1fr;;
+    grid-template-columns: 1fr 1fr 1fr;
 
   }
 
