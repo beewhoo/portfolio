@@ -114,6 +114,10 @@ main{
   -webkit-column-gap: 20px;
   }
 
+  .about p {
+  margin:0;
+  }
+
 .about-me p {
 background-color: rgba(255,255,255, 0.4);
 }
