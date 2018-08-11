@@ -16,6 +16,7 @@ body{
 
 h3 {
   font-size: 2em;
+  margin:0;
 
 }
 
@@ -144,7 +145,7 @@ height: 586px;
 /*---------main---------*/
 
 main{
-	background-color: #fff;
+	background-color: #f4f4f4;
 }
 
 .about {
@@ -322,6 +323,7 @@ nav .menu span:nth-child(3){
 .menu-items{
   position: absolute;
   top: 80px;
+  height: 1000%;
   overflow: hidden;
   border-right: 1px solid #ddd;
   width: 80px;
@@ -332,12 +334,13 @@ nav .menu span:nth-child(3){
 }
 
 .menu-items ul{
-  height: calc(100vh - 80px);
+  /* height: calc(100vh - 80px); */
   background: #f4f4f4;
   width: 300px;
   list-style: none;
   margin: 0;
   padding: 0;
+  height: 1000%;
 
 }
 
@@ -513,7 +516,7 @@ nav .menu span:nth-child(3){
 
 
   .content .content-overlay {
-    background: rgba(0,0,0,0.7);
+    background: rgba(211,211,211,0.6);
     position: absolute;
     height: 99%;
     width: 100%;
@@ -559,7 +562,7 @@ nav .menu span:nth-child(3){
   }
 
   .content-details h3{
-    color: #fff;
+    color: purple;
     font-size: 1.5em;
     font-weight: 500;
     letter-spacing: 0.15em;
@@ -568,7 +571,7 @@ nav .menu span:nth-child(3){
   }
 
   .content-details p{
-    color: #fff;
+    color: #purple;
     font-size: 1em;
   }
 
@@ -587,6 +590,7 @@ nav .menu span:nth-child(3){
     grid-gap:1.5em;
 
   }
+
 
 
 }
