@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 var heading = document.querySelector("#iam");
-                var data = ["Hi! I'm Bibek 😜","I am a web developer!💻","I ❤️ solving problems!", "I've got crush😍 on the world!✈️"];
+                var data = ["Hi!", "I'm Bibek 😜","I am a web developer!","I ❤️ solving problems!", "I want to travel the world!🌎", "I like 🍍 on my pizza 🍕😈" ];
                 var j = 0;
                 var i = 0;
 
@@ -17,7 +17,7 @@ var heading = document.querySelector("#iam");
                 if(i<data[j].length){
                     heading.innerHTML += data[j].charAt(i);
                     i++;
-                    setTimeout(typing, 50);
+                    setTimeout(typing, 70);
                 }
                 else{
                     j++;
@@ -39,7 +39,7 @@ var heading = document.querySelector("#iam");
                 else{
                 heading.innerHTML = heading.innerHTML.slice(0, heading.innerHTML.length - k);
                 k++;
-                var time = setTimeout(del, 100);
+                var time = setTimeout(del, 125);
                 }
             }
 
