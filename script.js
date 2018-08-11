@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-   console.log("DOM fully loaded and parsed");
+
 
 var heading = document.querySelector("#iam");
                 var data = ["Hi! I'm Bibek 😜","I am a web developer!💻","I ❤️ solving problems!", "I've got crush😍 on the world!✈️"];
@@ -48,28 +48,28 @@ var heading = document.querySelector("#iam");
           // hamburger menu event addEventListener
 
 
-var menu = document.querySelector('.menu');
-var menuList = document.querySelector('.menu-items');
+          var menu = document.querySelector('.menu');
+          var menuList = document.querySelector('.menu-items');
 
-var menuOpened = false;
+          var menuOpened = false;
 
-//hover over the menu icon -- opens the mini menu
-menu.addEventListener('mouseover', function(){
-  menuList.style.left = '0';
-});
-//meave the menu-icon hides mini-icons
-menu.addEventListener('mouseleave', function(){
-  menuList.style.left = '-81px';
-});
+          //hover over the menu icon -- opens the mini menu
+          menu.addEventListener('mouseover', function(){
+            menuList.style.left = '0';
+          });
+          //meave the menu-icon hides mini-icons
+          menu.addEventListener('mouseleave', function(){
+            menuList.style.left = '-81px';
+          });
 
-menuList.addEventListener('mouseover', function(){
-  menuList.style.width = '300px';
-  menuList.style.left = '0';
-});
+          menuList.addEventListener('mouseover', function(){
+            menuList.style.width = '300px';
+            menuList.style.left = '0';
+          });
 
-menuList.addEventListener('mouseleave', function(){
-  menuList.style.width = '80px';
-  menuList.style.left = '-81px';
-});
+          menuList.addEventListener('mouseleave', function(){
+            menuList.style.width = '80px';
+            menuList.style.left = '-81px';
+          });
 
 });
