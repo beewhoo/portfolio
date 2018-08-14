@@ -38,21 +38,61 @@
     <!-- navigation -->
 
 
-  <body id="top">
+  <body>
+
+
+
+<!--moving css with svg  background-->
 
 				<div class="banner">
-					<div class="about-me" >
-            <div class="profile-picture">
-              <img src="images/profile.png" alt="profile-pic" class="profile-pic">
+          <svg class="blobCont">
+              <image xlink:href="https://i.imgur.com/luiXQxd.png" mask="url(#mask)" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                <mask id="mask" x="0" y="0">
+                  <g style="filter: url(#gooey)">
+                    <circle class="blob" cx="15%" cy="10%" r="100"  fill="white" stroke="white"/>
+                    <circle class="blob" cx="50%" cy="10%" r="100"  fill="white" stroke="white"/>
+                    <circle class="blob" cx="17%" cy="15%" r="100" fill="white" stroke="white"/>
+                    <circle class="blob" cx="90%" cy="20%" r="100"  fill="white" stroke="white"/>
+                    <circle class="blob" cx="30%" cy="25%" r="100" fill="white" stroke="white"/>
+                    <circle class="blob" cx="50%" cy="60%" r="100" fill="white" stroke="white"/>
+                    <circle class="blob" cx="70%" cy="90%" r="100" fill="white" stroke="white"/>
+                    <circle class="blob" cx="90%" cy="60%" r="100" fill="white" stroke="white"/>
+                    <circle class="blob" cx="30%" cy="90%" r="100" fill="white" stroke="white"/>
+                    <circle class="blob" cx="10%" cy="10%" r="100" fill="white" stroke="white"/>
+                    <circle class="blob" cx="50%" cy="10%" r="100" fill="white" stroke="white"/>
+                    <circle class="blob" cx="17%" cy="15%" r="100" fill="white" stroke="white"/>
+                    <circle class="blob" cx="40%" cy="20%" r="100" fill="white" stroke="white"/>
+                    <circle class="blob" cx="30%" cy="25%" r="100" fill="white" stroke="white"/>
+                    <circle class="blob" cx="80%" cy="60%" r="100" fill="white" stroke="white"/>
+                    <circle class="blob" cx="17%" cy="10%" r="100" fill="white" stroke="white"/>
+                    <circle class="blob" cx="40%" cy="60%" r="100" fill="white" stroke="white"/>
+                    <circle class="blob" cx="20%" cy="50%" r="100" fill="white" stroke="white"/>
+                    <circle class="blob" cx="90%" cy="60%" r="100" fill="white" stroke="white"/>
+                    <circle class="blob" cx="15%" cy="80%" r="100" fill="white" stroke="white"/>
+                    <circle class="blob" cx="60%" cy="10%" r="100" fill="white" stroke="white"/>
+                    <circle class="blob" cx="70%" cy="20%" r="100" fill="white" stroke="white"/>
+                    <circle class="blob" cx="28%" cy="40%" r="100" fill="white" stroke="white"/>
+
+                  </g>
+                </mask>
+                <filter id="gooey" height="130%">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                </filter>
+            </svg>
+
+
+            <!--profile image & js auto text -->
+
+            <div class='photo'>
+              <img src="images/profile.jpeg" alt="profile-pic" class="profile-pic">
             </div>
-            <p id='intro'></p>
-						<p id="iam"></p>
-					</div>
-				</div>
+          	<h1 id="iam"></h2>
 			</div>
 
+   <!--banner ends-->
 
-     <!--main part of the website -->
+   <!--main part of the website -->
 
 
 		<main>
@@ -80,36 +120,36 @@
       <div class="container">
 
     <div class="content">
-      <a href="#" target="_blank">
+      <a href="http://www.oinker.ca/" target="_blank">
       <div class="content-overlay"></div>
         <img class="content-image" src="images/oinker.png">
       <div class="content-details fadeIn-bottom">
         <h3 class="content-title">Oinker</h3>
-        <p class="content-text">DATE PLANNING APP</p>
+        <p class="content-text">RAILS DATE PLANNING APP</p>
         <p></p>
       </div>
       </a>
     </div>
 
     <div class="content">
-      <a href="#" target="_blank">
+      <a href="http://pokegif.herokuapp.com/" target="_blank">
       <div class="content-overlay"></div>
         <img class="content-image" src="images/pokemon.png">
       <div class="content-details fadeIn-bottom">
         <h3 class="content-title">Pokegif</h3>
-        <p class="content-text">POKEMONG GIF GENERATOR</p>
+        <p class="content-text">RAILS POKEMON GENERATOR</p>
       </div>
       </a>
     </div>
 
 
       <div class="content">
-        <a href="#" target="_blank">
+        <a href="https://beewhoo.github.io/responsive-movies/" target="_blank">
         <div class="content-overlay"></div>
-          <img class="content-image" src="images/weatherApp.png">
+          <img class="content-image" src="images/movies.png">
         <div class="content-details fadeIn-bottom">
-          <h3 class="content-title">Weathe app</h3>
-          <p class="content-text">REACT WEATHER APP</p>
+          <h3 class="content-title">Responsive</h3>
+          <p class="content-text">MOVIE APP LAYOUT</p>
         </div>
         </a>
       </div>
@@ -120,7 +160,7 @@
           <img class="content-image" src="images/seatyourself.png">
         <div class="content-details fadeIn-bottom">
           <h3 class="content-title">Seat Yourself</h3>
-          <p class="content-text">OPENTABLE CLONE</p>
+          <p class="content-text">RAILS OPENTABLE CLONE</p>
         </div>
         </a>
       </div>
@@ -227,14 +267,21 @@
 	<footer>
 
 				<div class="contact-section">
+
   				<h3 id="contact">CONTACT</h3>
+
           <div class="line">
             <p class="heading-title"><i class="far fa-envelope"></i></p>
-          </div>
+
+
+    </div class = 'contact-info'>
+
   					<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
   					<p>Phone: <b>416-662-5980</b></p>
   					<p>Email: <a href="bst_bib@hotmail.com"><b>bst_bib@hotmail.com</b></a></p>
-				</div>
+
+          </div>
+
 
   <!--social links-->
 

@@ -47,23 +47,7 @@ h3 {
   position: relative;
 }
 
-/*-------- Hamburger-------*/
-.hamburger {
-padding-bottom: 4em;
-}
 
-.hamburger a {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  z-index: 1;
-  width: 50px;
-  height: 50px;
-  box-sizing: border-box;
-  padding: 14px 0 0 9px;
-  border: 2px solid grey;
-  tap-highlight-color: transparent;
-}
 
 span {
   display: block;
@@ -110,16 +94,15 @@ span:nth-child(2) {
 /*--------- Banner--------- */
 
 .banner, footer {
-  background-image: url("images/mountain.jpg");
+  background-image: url('images/black.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: 1;
 }
 
 .banner {
-height: 586px;
+height: 100vh;
 }
 
 .banner .profile-pic{
@@ -128,18 +111,18 @@ height: 586px;
 	border-radius: 50%;
 	margin-top:9em;
   margin-right: 1em;
+  position: relative;
 }
 
-.banner .about-me{
-	max-width: 100%;
-	margin: 0 auto;
-	line-height: 1.4;
-	padding:2em 1.5em;
-	color: #FDFCFB;
-	font-size: 1em;
-	letter-spacing: 1px;
-  height: 50px;
+#iam{
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: inline-block;
+
+
 }
+
 
 
 /*---------main---------*/
@@ -151,22 +134,19 @@ main{
 .about {
   margin: 4.1em;
   text-align: justify;
-  -moz-column-count: 2;
+  -moz-column-count: 1;
   -moz-column-gap: 20px;
-  -webkit-column-count: 2;
+  -webkit-column-count: 1;
   -webkit-column-gap: 20px;
   }
+
+
 
 .about p {
   margin:0;
   }
 
-  .about-me p{
-    font-family:'Bungee';
-    line-height: 1.6;
-    font-size: 1.5em;
-    color: #FDFCFB;
-  }
+
 
 .skills {
 margin: 3em;
@@ -193,7 +173,6 @@ font-size: 5em;
 .social li a {
   color:black;
 }
-
 
 footer a{
 	text-decoration: none;
@@ -323,9 +302,8 @@ nav .menu span:nth-child(3){
 .menu-items{
   position: absolute;
   top: 80px;
-  height: 1000%;
+  height: 100%;
   overflow: hidden;
-  border-right: 1px solid #ddd;
   width: 80px;
   right: auto;
   left: -81px;
@@ -340,7 +318,7 @@ nav .menu span:nth-child(3){
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 1000%;
+  height: 100%;
 
 }
 
@@ -371,7 +349,310 @@ nav .menu span:nth-child(3){
 
 
 
+.blobCont {
+  position: absolute;
+  left:1px;
+  width: 100vw;
+  height: 100vh;
+}
 
+.blob:nth-child(1) {
+  animation: move1 20s infinite linear;
+}
+
+@keyframes move1 {
+  from {
+    transform: rotate(90deg) translate(200px, 0.1px) rotate(-90deg);
+  }
+  to {
+    transform: rotate(450deg) translate(200px, 0.1px) rotate(-450deg);
+  }
+}
+.blob:nth-child(2) {
+  animation: move2 20s infinite linear;
+}
+
+@keyframes move2 {
+  from {
+    transform: rotate(180deg) translate(200px, 0.1px) rotate(-180deg);
+  }
+  to {
+    transform: rotate(540deg) translate(200px, 0.1px) rotate(-540deg);
+  }
+}
+.blob:nth-child(3) {
+  animation: move3 20s infinite linear;
+}
+
+@keyframes move3 {
+  from {
+    transform: rotate(270deg) translate(200px, 0.1px) rotate(-270deg);
+  }
+  to {
+    transform: rotate(630deg) translate(200px, 0.1px) rotate(-630deg);
+  }
+}
+.blob:nth-child(4) {
+  animation: move4 20s infinite linear;
+}
+
+@keyframes move4 {
+  from {
+    transform: rotate(360deg) translate(200px, 0.1px) rotate(-360deg);
+  }
+  to {
+    transform: rotate(720deg) translate(200px, 0.1px) rotate(-720deg);
+  }
+}
+.blob:nth-child(5) {
+  animation: move5 20s infinite linear;
+}
+
+@keyframes move5 {
+  from {
+    transform: rotate(450deg) translate(200px, 0.1px) rotate(-450deg);
+  }
+  to {
+    transform: rotate(810deg) translate(200px, 0.1px) rotate(-810deg);
+  }
+}
+.blob:nth-child(6) {
+  animation: move6 20s infinite linear;
+}
+
+@keyframes move6 {
+  from {
+    transform: rotate(540deg) translate(200px, 0.1px) rotate(-540deg);
+  }
+  to {
+    transform: rotate(900deg) translate(200px, 0.1px) rotate(-900deg);
+  }
+}
+.blob:nth-child(7) {
+  animation: move7 20s infinite linear;
+}
+
+@keyframes move7 {
+  from {
+    transform: rotate(630deg) translate(200px, 0.1px) rotate(-630deg);
+  }
+  to {
+    transform: rotate(990deg) translate(200px, 0.1px) rotate(-990deg);
+  }
+}
+.blob:nth-child(8) {
+  animation: move8 20s infinite linear;
+}
+
+@keyframes move8 {
+  from {
+    transform: rotate(720deg) translate(200px, 0.1px) rotate(-720deg);
+  }
+  to {
+    transform: rotate(1080deg) translate(200px, 0.1px) rotate(-1080deg);
+  }
+}
+.blob:nth-child(9) {
+  animation: move9 20s infinite linear;
+}
+
+@keyframes move9 {
+  from {
+    transform: rotate(810deg) translate(200px, 0.1px) rotate(-810deg);
+  }
+  to {
+    transform: rotate(1170deg) translate(200px, 0.1px) rotate(-1170deg);
+  }
+}
+.blob:nth-child(10) {
+  animation: move10 20s infinite linear;
+}
+
+@keyframes move10 {
+  from {
+    transform: rotate(900deg) translate(200px, 0.1px) rotate(-900deg);
+  }
+  to {
+    transform: rotate(1260deg) translate(200px, 0.1px) rotate(-1260deg);
+  }
+}
+.blob:nth-child(11) {
+  animation: move11 20s infinite linear;
+}
+
+@keyframes move11 {
+  from {
+    transform: rotate(990deg) translate(200px, 0.1px) rotate(-990deg);
+  }
+  to {
+    transform: rotate(1350deg) translate(200px, 0.1px) rotate(-1350deg);
+  }
+}
+.blob:nth-child(12) {
+  animation: move12 20s infinite linear;
+}
+
+@keyframes move12 {
+  from {
+    transform: rotate(1080deg) translate(200px, 0.1px) rotate(-1080deg);
+  }
+  to {
+    transform: rotate(1440deg) translate(200px, 0.1px) rotate(-1440deg);
+  }
+}
+.blob:nth-child(13) {
+  animation: move13 20s infinite linear;
+}
+
+@keyframes move13 {
+  from {
+    transform: rotate(1170deg) translate(200px, 0.1px) rotate(-1170deg);
+  }
+  to {
+    transform: rotate(1530deg) translate(200px, 0.1px) rotate(-1530deg);
+  }
+}
+.blob:nth-child(14) {
+  animation: move14 20s infinite linear;
+}
+
+@keyframes move14 {
+  from {
+    transform: rotate(1260deg) translate(200px, 0.1px) rotate(-1260deg);
+  }
+  to {
+    transform: rotate(1620deg) translate(200px, 0.1px) rotate(-1620deg);
+  }
+}
+.blob:nth-child(15) {
+  animation: move15 20s infinite linear;
+}
+
+@keyframes move15 {
+  from {
+    transform: rotate(1350deg) translate(200px, 0.1px) rotate(-1350deg);
+  }
+  to {
+    transform: rotate(1710deg) translate(200px, 0.1px) rotate(-1710deg);
+  }
+}
+.blob:nth-child(16) {
+  animation: move16 20s infinite linear;
+}
+
+@keyframes move16 {
+  from {
+    transform: rotate(1440deg) translate(200px, 0.1px) rotate(-1440deg);
+  }
+  to {
+    transform: rotate(1800deg) translate(200px, 0.1px) rotate(-1800deg);
+  }
+}
+.blob:nth-child(17) {
+  animation: move17 20s infinite linear;
+}
+
+@keyframes move17 {
+  from {
+    transform: rotate(1530deg) translate(200px, 0.1px) rotate(-1530deg);
+  }
+  to {
+    transform: rotate(1890deg) translate(200px, 0.1px) rotate(-1890deg);
+  }
+}
+.blob:nth-child(18) {
+  animation: move18 20s infinite linear;
+}
+
+@keyframes move18 {
+  from {
+    transform: rotate(1620deg) translate(200px, 0.1px) rotate(-1620deg);
+  }
+  to {
+    transform: rotate(1980deg) translate(200px, 0.1px) rotate(-1980deg);
+  }
+}
+.blob:nth-child(19) {
+  animation: move19 20s infinite linear;
+}
+
+@keyframes move19 {
+  from {
+    transform: rotate(1620deg) translate(200px, 0.1px) rotate(-1620deg);
+  }
+  to {
+    transform: rotate(1980deg) translate(200px, 0.1px) rotate(-1980deg);
+  }
+}
+.blob:nth-child(20) {
+  animation: move20 20s infinite linear;
+}
+
+@keyframes move20 {
+  from {
+    transform: rotate(1620deg) translate(200px, 0.1px) rotate(-1620deg);
+  }
+  to {
+    transform: rotate(1980deg) translate(200px, 0.1px) rotate(-1980deg);
+  }
+}
+.blob:nth-child(21) {
+  animation: move21 20s infinite linear;
+}
+
+@keyframes move21 {
+  from {
+    transform: rotate(1620deg) translate(200px, 0.1px) rotate(-1620deg);
+  }
+  to {
+    transform: rotate(1980deg) translate(200px, 0.1px) rotate(-1980deg);
+  }
+}
+.blob:nth-child(22) {
+  animation: move22 20s infinite linear;
+}
+
+@keyframes move22 {
+  from {
+    transform: rotate(1620deg) translate(200px, 0.1px) rotate(-1620deg);
+  }
+  to {
+    transform: rotate(1980deg) translate(200px, 0.1px) rotate(-1980deg);
+  }
+}
+.blob:nth-child(23) {
+  animation: move23 22s infinite linear;
+}
+
+@keyframes move23 {
+  from {
+    transform: rotate(1620deg) translate(200px, 0.1px) rotate(-1620deg);
+  }
+  to {
+    transform: rotate(1980deg) translate(200px, 0.1px) rotate(-1980deg);
+  }
+}
+.blob:nth-child(24) {
+  animation: movew24 20s infinite linear;
+}
+
+@keyframes move24 {
+  from {
+    transform: rotate(1620deg) translate(200px, 0.1px) rotate(-1620deg);
+  }
+  to {
+    transform: rotate(1980deg) translate(200px, 0.1px) rotate(-1980deg);
+  }
+}
+
+
+.blob:nth-child(even) {
+ display: none;
+}
+
+.contact-info {
+background-color: rgba(0,0,0,.5);
+}
 
 
 
@@ -383,9 +664,8 @@ nav .menu span:nth-child(3){
 
 
 	.banner{
-    height: 658px;
-		display: flex;
 		justify-content: space-between;
+    height: 100vh;
 
 	}
 
@@ -395,25 +675,13 @@ nav .menu span:nth-child(3){
 	}
 
   .banner .profile-pic{
-  	width: 200px;
-  	margin:0
-
-  }
-
-  .about-me p{
-    font-size: 3em;
+  	width: 300px;
 
   }
 
 
-  .banner .about-me {
-    position: relative;
-    top: 11em;
-  }
 
-  .about {
-    margin: 13em;
-  }
+
   .skills {
     margin:2.5em;
   }
@@ -480,6 +748,17 @@ nav .menu span:nth-child(3){
     margin-bottom: 0;
   }
 
+
+  .about {
+    -moz-column-count: 2;
+    -webkit-column-count: 1;
+  }
+
+  .blob:nth-child(even) {
+   display: inline;
+  }
+
+
 }
 
 
@@ -491,7 +770,7 @@ nav .menu span:nth-child(3){
 
 
   .banner {
-    height: 900px;
+    height: 100vh;
     width: auto;
   }
 
@@ -516,7 +795,7 @@ nav .menu span:nth-child(3){
 
 
   .content .content-overlay {
-    background: rgba(211,211,211,0.6);
+    background: rgba(0,0,0,0.9);
     position: absolute;
     height: 99%;
     width: 100%;
@@ -528,19 +807,23 @@ nav .menu span:nth-child(3){
     -webkit-transition: all 0.4s ease-in-out 0s;
     -moz-transition: all 0.4s ease-in-out 0s;
     transition: all 0.4s ease-in-out 0s;
+    margin:1em;
   }
 
   .content:hover .content-overlay{
     opacity: 1;
+    margin: 1em;
   }
 
   .content-image{
     width: 100%;
+    margin: 1em;
   }
 
   .content-details {
     position: absolute;
     text-align: center;
+    margin: 1em;
     padding-left: 1em;
     padding-right: 1em;
     width: 80%;
@@ -562,7 +845,7 @@ nav .menu span:nth-child(3){
   }
 
   .content-details h3{
-    color: purple;
+    color: white;
     font-size: 1.5em;
     font-weight: 500;
     letter-spacing: 0.15em;
@@ -571,7 +854,7 @@ nav .menu span:nth-child(3){
   }
 
   .content-details p{
-    color: #purple;
+    color:grey;
     font-size: 1em;
   }
 
@@ -590,6 +873,10 @@ nav .menu span:nth-child(3){
     grid-gap:1.5em;
 
   }
+
+
+
+
 
 
 
