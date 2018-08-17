@@ -362,17 +362,16 @@ background: linear-gradient(#cc2b5e,#753a8880);
 }
 
 .blob:nth-child(1) {
-  -webkit-animation: move1 20s infinite linear;
+  animation: move1 20s infinite linear;
 
 }
 
 @keyframes move1 {
   from {
-    -webkit-transform: rotate(90deg) translate(200px, 0.1px) rotate(-90deg);
-
+    transform: rotate(90deg) translate(200px, 0.1px) rotate(-90deg)
   }
   to {
-    -webkit-transform: rotate(450deg) translate(200px, 0.1px) rotate(-450deg);
+    transform: rotate(450deg) translate(200px, 0.1px) rotate(-450deg)
 
   }
 }
