@@ -18,12 +18,15 @@ body{
 
 h3 {
   font-size: 2em;
-  margin:0;
+  padding-top:1.2em;
+
 
 }
 
 h4 {
-  font-size: 1.4em;
+  font-size: 1em;
+  display: inline-block;
+  border-bottom: 2px solid rebeccapurple;
 
 }
 
@@ -201,6 +204,7 @@ height: 100vh;
 
 main{
 	background-color: #f4f4f4;
+  padding-top: 1em;
 }
 
 .about {
@@ -214,15 +218,16 @@ main{
 
 
 .about p {
-  margin:0;
+  margin:4px;
   }
 
-.skills {
-margin: 3em;
-}
 
 div .tools {
-font-size: 5em;
+font-size: 4em;
+}
+
+.tools i {
+margin-right:0.2em;
 }
 
 .content-image {
@@ -694,8 +699,14 @@ background: rgba(0,0,0,.5)
   }
 
   div .tools {
-  font-size: 10em;
+    font-size: 6em;
   }
+
+  .tools i {
+  margin-bottom: 1em;
+  }
+
+
 
 	.project{
 		margin-bottom: 1em;
@@ -786,7 +797,7 @@ background: rgba(0,0,0,.5)
   }
 
   .about {
-    margin:19em;
+    margin:22em;
   }
 
   .skills{
