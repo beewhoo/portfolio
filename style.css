@@ -32,6 +32,7 @@ h4 {
   padding: 0.5em;
   margin-bottom: 1.2em;
 
+=
 
 }
 
@@ -284,6 +285,7 @@ footer h3{
 	font-size: 1.2em;
   color:#FDFCFB;
 	padding-top: 2.5em;
+  margin: 0;
 }
 
 footer .contact-section{
@@ -784,6 +786,11 @@ background: rgba(0,0,0,.5)
    display: inline;
   }
 
+  h4 {
+
+    font-size: 1.5em;
+  }
+
 
 }
 
@@ -810,7 +817,11 @@ background: rgba(0,0,0,.5)
   }
 
   .skills{
+<<<<<<< HEAD
     margin:4em;
+=======
+    margin:5.5em;
+>>>>>>> gh-pages
 
   }
 
@@ -891,7 +902,11 @@ background: rgba(0,0,0,.5)
   }
 
   .container{
+<<<<<<< HEAD
     margin-top: 7.5em;
+=======
+    margin-top: 6.5em;
+>>>>>>> gh-pages
     padding-bottom: 9.5em;
 
   }
