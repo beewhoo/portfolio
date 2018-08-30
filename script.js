@@ -72,4 +72,35 @@ var heading = document.querySelector("#iam");
             menuList.style.left = '-81px';
           });
 
+
+  var modal = document.getElementById("mmodal");
+var myimgc = document.getElementsByClassName('slide');
+var modalImg = document.getElementById("img1");
+var currentSlide = 0;
+
+function plusImage(n){
+  showimage(currentSlide+n)
+}
+function showimage(n){
+  currentSlide = n;
+  modal.style.display = "block";
+  if(currentSlide > myimgc.length-1){
+    currentSlide = 0;
+  }
+  else if(currentSlide < 0){
+    currentSlide = myimgc.length-1;
+  }
+  modalImg.src = myimgc[currentSlide].src;
+}
+//
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementById("close");
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
 });
