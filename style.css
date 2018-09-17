@@ -828,7 +828,7 @@ background: rgba(0,0,0,.5)
 
 
   .content .content-overlay {
-    background: linear-gradient(#cc2b5e,#753a88);
+    background: rgba(0, 0, 0, 0.9);
 
 
     position: absolute;
