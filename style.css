@@ -17,8 +17,8 @@ body{
 
 
 h3 {
-  font-size: 2em;
-  padding:1.2em;
+  font-size: 1.5em;
+  text-align: center;
 
 
 
@@ -28,7 +28,7 @@ h4 {
   font-size: 1.3em;
   display: inline-block;
   border: 1px solid grey;
-  padding: .5em;
+  padding: .3em;
   color: white;
   background: rgba(51, 51, 51, 0.5);
   margin-bottom: 1.2em;
@@ -209,22 +209,24 @@ height: 100vh;
 /*---------main---------*/
 
 main{
-	background-color: #f4f4f4;
   padding-top: 1em;
+  background-image: url('https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-position: center;
+  background-size: contain;
 }
 
 .about {
-  margin: 4.1em;
+
   text-align: justify;
   -moz-column-count: 1;
   -moz-column-gap: 20px;
   -webkit-column-count: 1;
   -webkit-column-gap: 20px;
-  }
 
+}
 
 .about p {
-  margin:4px;
+  margin:12px;
   }
 
 
@@ -286,6 +288,7 @@ footer h3{
   color:#FDFCFB;
 	padding-top: 2.5em;
   margin: 0;
+
 }
 
 footer .contact-section{
@@ -706,7 +709,10 @@ background: rgba(0,0,0,.5)
 
   .skills {
     margin:2em;
+    background-image: linear-gradient(#36d1dc90,#5b86e590);
+
   }
+
 
   div .tools {
     font-size: 6em;
@@ -778,6 +784,9 @@ background: rgba(0,0,0,.5)
   .about {
     -moz-column-count: 2;
     -webkit-column-count: 1;
+    background-image: linear-gradient(#ff512f90,#dd247690);
+    margin: 4.1em;
+    padding: 5em;
   }
 
   /* display hidden blobs */
@@ -800,6 +809,11 @@ background: rgba(0,0,0,.5)
 /*-----Responsive-1024px----------------------------------------------------------------------*/
 
 @media only screen and (min-width: 1024px){
+
+  h3{
+    padding:1.2em;
+    text-align: center;
+  }
 
 
   .banner {
