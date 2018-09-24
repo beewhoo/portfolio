@@ -6,12 +6,10 @@ html {
 
 a {
 text-decoration: none;
-color:
+color:white;
 }
 
 body{
-	margin:0;
-	padding:0;
 	text-align: center;
 }
 
@@ -125,6 +123,11 @@ nav .menu span:nth-child(3){
 
 }
 
+.about p {
+  margin:12px;
+  color:white;
+}
+
 /*heading */
 
 .heading-title {
@@ -209,10 +212,10 @@ height: 100vh;
 /*---------main---------*/
 
 main{
-  padding-top: 1em;
-  background-image: url('https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-image: url('https://images.pexels.com/photos/755385/pexels-photo-755385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-position: center;
-  background-size: contain;
+  background-size:cover;
+
 }
 
 .about {
@@ -225,9 +228,6 @@ main{
 
 }
 
-.about p {
-  margin:12px;
-  }
 
 
 div .tools {
@@ -706,12 +706,15 @@ background: rgba(0,0,0,.5)
 
   }
 
+  .about p {
+    margin:12px;
+    padding: 12em;
+    font-size: 1.3em;
+    }
 
-  .skills {
-    margin:2em;
-    text-align: center;
 
-  }
+
+
 
 
 
@@ -784,15 +787,6 @@ background: rgba(0,0,0,.5)
     margin-bottom: 0;
 
   }
-
-
-  .about {
-    -moz-column-count: 2;
-    -webkit-column-count: 1;
-    background-image: linear-gradient(#ff512f90,#dd247690);
-    padding: 5em;
-  }
-
   /* display hidden blobs */
 
   .blob:nth-child(even) {
@@ -818,9 +812,6 @@ background: rgba(0,0,0,.5)
     text-align: center;
   }
 
-  #about {
-    padding-top: 3em;
-  }
 
 
   .banner {
@@ -834,12 +825,13 @@ background: rgba(0,0,0,.5)
   }
 
   .about {
-    margin:14em;
+    height: 100vh;
+    padding: 0;
   }
 
   .skills{
+    height: 100vh;
 
-    margin:4em;
   }
 
   footer .contact-section{
