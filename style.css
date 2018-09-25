@@ -6,7 +6,7 @@ html {
 
 a {
 text-decoration: none;
-color:white;
+color:grey;
 }
 
 body{
@@ -15,8 +15,9 @@ body{
 
 
 h3 {
-  font-size: 1.5em;
+  font-size: 2em;
   text-align: center;
+  color:white;
 
 
 
@@ -124,8 +125,9 @@ nav .menu span:nth-child(3){
 }
 
 .about p {
-  margin:12px;
   color:white;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1em;
 }
 
 /*heading */
@@ -211,22 +213,50 @@ height: 100vh;
 
 /*---------main---------*/
 
-main{
-  background-image: url('https://images.pexels.com/photos/755385/pexels-photo-755385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-  background-position: center;
-  background-size:cover;
-
-}
 
 .about {
-
-  text-align: justify;
+  height: 100vh;
   -moz-column-count: 1;
   -moz-column-gap: 20px;
   -webkit-column-count: 1;
   -webkit-column-gap: 20px;
+  background: url('https://images.pexels.com/photos/53153/full-moon-moon-night-sky-53153.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')repeat 0 0;
+  width: 100%;
+  -webkit-animation: slide 40s linear infinite;
+  background-size: cover;
 
-}
+
+  }
+
+
+  @-webkit-keyframes slide {
+    from { background-position: -200px 0; }
+    to { background-position: -900px 0; }
+  }
+
+
+  .skills{
+    height: 100vh;
+    -moz-column-count: 1;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 1;
+    -webkit-column-gap: 20px;
+    background: url('https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')repeat 0 0;
+    width: 100%;
+    -webkit-animation: slide 40s linear infinite;
+
+    }
+
+
+    @-webkit-keyframes slide {
+      from { background-position: 0 0; }
+      to { background-position: -900px 0; }
+    }
+
+
+
+
+
 
 
 
@@ -706,12 +736,10 @@ background: rgba(0,0,0,.5)
 
   }
 
-  .about p {
-    margin:12px;
-    padding: 12em;
-    font-size: 1.3em;
-    }
 
+.about p {
+  margin: 12em;
+}
 
 
 
@@ -735,6 +763,10 @@ background: rgba(0,0,0,.5)
 	.project{
 		margin-bottom: 1em;
 	}
+
+  .container {
+    height: 100vh;s
+  }
 
 	.footer-content .back-btn{
 		display:none;
@@ -810,6 +842,7 @@ background: rgba(0,0,0,.5)
 
   h3{
     text-align: center;
+    display: inline-block;
   }
 
 
@@ -829,10 +862,8 @@ background: rgba(0,0,0,.5)
     padding: 0;
   }
 
-  .skills{
-    height: 100vh;
 
-  }
+
 
   footer .contact-section{
     padding:4em;
