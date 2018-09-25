@@ -236,7 +236,7 @@ height: 100vh;
 
 
   .skills{
-    height: 100vh;
+    height: 110vh;
     -moz-column-count: 1;
     -moz-column-gap: 20px;
     -webkit-column-count: 1;
@@ -260,12 +260,11 @@ height: 100vh;
 
 
 
-div .tools {
-font-size: 4em;
-}
+
 
 .tools i {
 margin-right:0.2em;
+font-size: 5em;
 }
 
 .content-image {
@@ -702,13 +701,6 @@ background: rgba(0,0,0,.5)
 
 
 
-
-
-
-  div .tools {
-    font-size: 6em;
-  }
-
   .tools i {
   margin-bottom: 1em;
   }
@@ -723,9 +715,6 @@ background: rgba(0,0,0,.5)
 		margin-bottom: 1em;
 	}
 
-  .container {
-    height: 100vh;s
-  }
 
 	.footer-content .back-btn{
 		display:none;
@@ -893,6 +882,12 @@ background: rgba(0,0,0,.5)
     top: 80%;
   }
 
+  .skills {
+    height: 100vh;
+  }
+  .tools {
+    padding-top: 3em;
+  }
 
 
 
