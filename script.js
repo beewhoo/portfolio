@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 var heading = document.querySelector("#iam");
-                var data = ["Hi!", "I'm Bibek 😜","I am a web developer!","I ❤️ solving problems!", "I want to travel the world!🌎", "I like 🍍 on my pizza 🍕😈" ];
+                var data = ["Hi!", "I'm Bibek 😜","I am a web developer!","I ❤️ solving problems!", "I want to travel the world!🌎", "I like 🍍 on my pizza 🍕🙌" ];
                 var j = 0;
                 var i = 0;
 
