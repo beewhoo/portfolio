@@ -25,11 +25,8 @@ h3 {
 
 h4 {
   font-size: 1.3em;
-  display: inline-block;
-  border: 1px solid grey;
   padding: .3em;
   color: white;
-  background: rgba(51, 51, 51, 0.5);
   margin-bottom: 1.2em;
 
 
@@ -252,18 +249,17 @@ height: 100vh;
     }
 
 
-
-
-
-
-
-
-
-
 .tools i {
-margin-right:0.2em;
-font-size: 5em;
+  font-size: 5em;
 }
+
+.tools {
+  background: rgba(51,51,51, 0.3);
+  margin-top: 10%;
+  display: inline-block;
+  padding: 1.5em;
+}
+
 
 .content-image {
   max-width: 100%;
@@ -698,17 +694,6 @@ background: rgba(0,0,0,.5)
 }
 
 
-
-  .tools i {
-  margin-bottom: 1em;
-  }
-
-
-.tools {
-  margin: 0;
-}
-
-
 	.project{
 		margin-bottom: 1em;
 	}
@@ -883,9 +868,7 @@ background: rgba(0,0,0,.5)
   .skills {
     height: 100vh;
   }
-  .tools {
-    padding-top: 3em;
-  }
+
 
 
 
